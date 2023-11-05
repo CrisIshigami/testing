@@ -1,0 +1,48 @@
+a{
+    cursor: url('../images/cursor/shura_link.gif'),auto;
+}
+
+
+html,body{
+    cursor: url('../images/cursor/shura_normal.gif'),auto;
+}
+
+
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #fff;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+#image-container {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    height: 100px; /* Ajusta la altura según tus necesidades */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image-container img {
+    width: 200px;
+    height: auto;
+    display: none; /* Oculta las imágenes inicialmente */
+}
+
+
+#preloader.fadeout {
+    opacity: 0;
+}
+
+@keyframes spin {
+to {
+    transform: rotate(360deg);
+}
+}
