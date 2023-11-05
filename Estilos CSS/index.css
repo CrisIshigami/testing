@@ -84,8 +84,9 @@ body::-webkit-scrollbar-thumb, .section__network::-webkit-scrollbar-thumb{
 .ul__nav{
     position: absolute;
     inset: 0;
-    height: 40rem;
+    height: 100vh;
     padding: 80px 20px 5rem;
+    bottom: 0;
     display: grid;
     text-align: center;
     list-style: none;
@@ -165,7 +166,6 @@ body::-webkit-scrollbar-thumb, .section__network::-webkit-scrollbar-thumb{
     bottom: 0;
     margin-right: 10px;
     margin-bottom: -6px;
-    z-index: 1;
 }
 
 .lateral__image{
@@ -232,42 +232,33 @@ body::-webkit-scrollbar-thumb, .section__network::-webkit-scrollbar-thumb{
     border: 0px solid transparent;
     border-radius: 10px;
     cursor: pointer;
-}
-.card__opacity{
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    border: 1px solid transparent;
-    border-radius: 10px;
-    opacity: .35;
+    text-decoration: none;
 }
 .card__title{
-    position: absolute;
     color: white;
     text-align: center;
 
 }
 
 .card__information_div:nth-child(1){
-    background-image: url('/images/banner.webp');
+    background-image: linear-gradient(rgb(0, 0, 0, 0.35), rgba(0,0,0, 0.35)),
+    url('/images/banner.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .card__information_div:nth-child(2){
-    background-image: url('/images/horario-semanal.webp');
+    background-image: linear-gradient(rgb(0, 0, 0, 0.35), rgba(0,0,0, 0.35)),
+    url('/images/horario-semanal.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .card__information_div:nth-child(3){
-    background-image: url('/images/banner.webp');
+    background-image: linear-gradient(rgb(0, 0, 0, 0.35), rgba(0,0,0, 0.35)),
+    url('/images/banner.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
