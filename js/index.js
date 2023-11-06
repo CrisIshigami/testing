@@ -20,6 +20,7 @@ link.forEach(function(link){
     })
 });
 
+/*CAMBIAR DE IMAGEN DE PERFIL*/
 
 /*----ANIMACIÓN AL HACER SCROLL*/
 
