@@ -20,6 +20,26 @@ link.forEach(function(link){
     })
 });
 
+/*
+ABRIR EL MODAL PARA VER EL HORARIO DE LA SEMANA
+*/
+
+document.querySelectorAll('.card__information_div_image').forEach(image =>{
+    image.onclick=()=>{
+        document.querySelector('.popup_img').style.display='flex';
+        document.querySelector('.schedule');
+    }
+})
+
+document.querySelector('.popup_img .cancel').onclick=()=>{
+    document.querySelector('.popup_img').style.display='none';
+}
+
+document.querySelector('.popup_img a').onclick=()=>{
+    document.querySelector('.popup_img').style.display='none';
+}
+
+
 /*CAMBIAR DE IMAGEN DE PERFIL*/
 
 /*----ANIMACIÓN AL HACER SCROLL*/

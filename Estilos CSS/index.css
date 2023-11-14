@@ -275,12 +275,6 @@ body::-webkit-scrollbar-thumb, .section__network::-webkit-scrollbar-thumb{
     padding-top: 10rem;
     overflow: hidden;
 }
-
-.section__information{
-    /*animation:slide-top 1s cubic-bezier(.25,.46,.45,.94) both;
-    background-color: red;*/
-}
-
 .title{
     display: flex;
     flex-direction: column;
@@ -298,6 +292,43 @@ body::-webkit-scrollbar-thumb, .section__network::-webkit-scrollbar-thumb{
     font-weight: 100;
 }
 
+/*MODAL SCHEDULE*/
+.popup_img{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(65, 32, 65, 0.9);
+    width: 100%;
+    height: 100%;
+}
+
+.popup_img .schedule{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 800px;
+    width: 95%;
+    object-fit: cover;
+}
+.popup_img .cancel{
+    position: absolute;
+    top: 10%;
+    right: 20px;
+    z-index: 100;
+    width: 20px;
+    height: 20px;
+    cursor: url('../images/cursor/shura_link.gif'),auto;
+}
+.cancel:hover{
+    color: black;
+}
+/*----------------------------*/
+
 .card_information{
     display: flex;
     flex-direction: column;
@@ -306,10 +337,9 @@ body::-webkit-scrollbar-thumb, .section__network::-webkit-scrollbar-thumb{
     padding: 10px;
     justify-content: center;
     gap: 20px;
-
 }
 
-.card__information_div{
+.card__information_div,.card__information_div_image{
     display: flex;
     align-content: center;
     align-items: center;
@@ -321,6 +351,7 @@ body::-webkit-scrollbar-thumb, .section__network::-webkit-scrollbar-thumb{
     border-radius: 10px;
     cursor: url('../images/cursor/shura_link.gif'),auto;
     text-decoration: none;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.35), rgba(0,0,0, 0.35))
 }
 .card__title{
     color: white;
@@ -330,13 +361,13 @@ body::-webkit-scrollbar-thumb, .section__network::-webkit-scrollbar-thumb{
 
 .card__information_div:nth-child(1){
     background-image: linear-gradient(rgb(0, 0, 0, 0.35), rgba(0,0,0, 0.35)),
-    url('/images/banner.webp');
+    url('/images/debut_image.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.card__information_div:nth-child(2){
+.card__information_div_image:nth-child(2){
     background-image: linear-gradient(rgb(0, 0, 0, 0.35), rgba(0,0,0, 0.35)),
     url('/images/horario-semanal.webp');
     background-position: center;
@@ -344,7 +375,7 @@ body::-webkit-scrollbar-thumb, .section__network::-webkit-scrollbar-thumb{
     background-repeat: no-repeat;
 }
 
-.card__information_div:nth-child(3){
+.card__information_div:nth-child(4){
     background-image: linear-gradient(rgb(0, 0, 0, 0.35), rgba(0,0,0, 0.35)),
     url('/images/banner.webp');
     background-position: center;
@@ -593,6 +624,7 @@ body::-webkit-scrollbar-thumb, .section__network::-webkit-scrollbar-thumb{
 
 /*-------------------------------------------MEDIA QUERY-----------------------------*/
 
+/*-----@media 768px------*/
 @media (min-width:768px){
     body{
         color: #402140;
@@ -687,6 +719,20 @@ body::-webkit-scrollbar-thumb, .section__network::-webkit-scrollbar-thumb{
         font-size: 18px;
         font-weight: 300;
     }
+
+    /*MODAL SCHEDULE*/
+    .popup_img .schedule{
+        top: 55%;
+        max-width: 800px;
+        width: 95%;
+    }
+    .popup_img .cancel{
+        top: 10%;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+    }
+    /*----------------------------*/
     
     .card_information{
         gap: 30px;
@@ -933,6 +979,20 @@ body::-webkit-scrollbar-thumb, .section__network::-webkit-scrollbar-thumb{
         font-weight: 100;
     }
 
+    /*MODAL SCHEDULE*/
+    .popup_img .schedule{
+        top: 55%;
+        max-width: 800px;
+        width: 95%;
+    }
+    .popup_img .cancel{
+        top: 12%;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+    }
+    /*----------------------------*/
+
     .card_information{
         display: flex;
         flex-direction: row;
@@ -1102,6 +1162,7 @@ body::-webkit-scrollbar-thumb, .section__network::-webkit-scrollbar-thumb{
     }
 }
 
+/*-----@media 1440px------*/
 @media (min-width:1440px){
     #Información{
         scroll-margin-top: 120px;
@@ -1163,12 +1224,26 @@ body::-webkit-scrollbar-thumb, .section__network::-webkit-scrollbar-thumb{
         font-weight: 100;
     }
 
+    /*MODAL SCHEDULE*/
+    .popup_img .schedule{
+        top: 55%;
+        max-width: 950px;
+        width: 95%;
+    }
+    .popup_img .cancel{
+        top: 12%;
+        right: 20px;
+        width: 24px;
+        height: 24px;
+    }
+    /*----------------------------*/
+
     .card_information{
         height: auto;
         gap: 40px;
     }
 
-    .card__information_div{
+    .card__information_div,.card__information_div_image{
         width: 100%;
         max-width: 600px;
         height: 200px;
