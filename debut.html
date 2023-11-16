@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Estilos CSS/debut.css">
+    <link rel="stylesheet" href="Estilos CSS/cursor.css">
     <link rel="icon" href="images/icon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
     <link rel="icon" href="images/icon_shuwa_png.png" type="image/png">
@@ -28,11 +29,10 @@
         </section>
     </header>
 
-    <a href="#top" class="icon__top">
-        <img class="lateral__image" src="/images/shura_lateral.webp" alt="">
-    </a>
-
     <main class="main">
+        <a href="#top" class="icon__top">
+            <img class="lateral__image" src="/images/shura_lateral.webp" alt="">
+        </a>
         <section class="lore__main">
             <section class="lore__container container">
                 <img src="/images/shura_halloween.webp" alt="" class="lore__img">
@@ -42,8 +42,12 @@
                     <p class="lore__description__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae mollitia ex dolor, molestias excepturi illum unde nihil repudiandae doloremque provident ipsa facere itaque animi praesentium nesciunt consequatur corporis! Deleniti, aperiam.
                     Repudiandae id voluptas delectus praesentium aliquam ut! Aliquam, dicta tenetur eius sed quo corrupti minima, incidunt repudiandae saepe alias rerum temporibus facere? Ipsum cupiditate earum esse expedita culpa ducimus perspiciatis.
                     <section class="section__icon__sgv">
-                        <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 462.799"><path fill-rule="nonzero" d="M403.229 0h78.506L310.219 196.04 512 462.799H354.002L230.261 301.007 88.669 462.799h-78.56l183.455-209.683L0 0h161.999l111.856 147.88L403.229 0zm-27.556 415.805h43.505L138.363 44.527h-46.68l283.99 371.278z"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 439 512.167"><g fill-rule="nonzero"><path fill="#FEFEFE" d="M402.415 237.792l-73.165 73.166h-73.167l-64.021 64.021v-64.021H109.75V36.585h292.665z"/><path d="M402.415 237.792l-73.165 73.166h-73.167l-64.021 64.021v-64.021H109.75V36.585h292.665v201.207zM91.458 0L0 91.457v329.251h109.75v91.458l91.458-91.458h73.167L439 256.083V0H91.458z"/><path d="M310.958 210.354h36.584v-109.75h-36.584zM210.354 210.354h36.583v-109.75h-36.583z"/></g></svg>    
+                        <a href="https://twitter.com/ShuraHiwa" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 462.799"><path fill-rule="nonzero" d="M403.229 0h78.506L310.219 196.04 512 462.799H354.002L230.261 301.007 88.669 462.799h-78.56l183.455-209.683L0 0h161.999l111.856 147.88L403.229 0zm-27.556 415.805h43.505L138.363 44.527h-46.68l283.99 371.278z"/></svg>
+                        </a>
+                        <a href="https://www.twitch.tv/shurahiwa" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 439 512.167"><g fill-rule="nonzero"><path fill="#FEFEFE" d="M402.415 237.792l-73.165 73.166h-73.167l-64.021 64.021v-64.021H109.75V36.585h292.665z"/><path d="M402.415 237.792l-73.165 73.166h-73.167l-64.021 64.021v-64.021H109.75V36.585h292.665v201.207zM91.458 0L0 91.457v329.251h109.75v91.458l91.458-91.458h73.167L439 256.083V0H91.458z"/><path d="M310.958 210.354h36.584v-109.75h-36.584zM210.354 210.354h36.583v-109.75h-36.583z"/></g></svg>    
+                        </a>
                     </section>
                 </section>
             </section>
@@ -90,8 +94,12 @@
                         <div class="table__column">
                             <h2 class="column__title">Colores</h2>
                             <div class="column__contents">
-                                <span>#ffbae9</span>
-                                <span>#323769</span>
+                                <div class="color-swatch1">
+                                    <span style="background-color: #ffbae9;"></span><span class="color-swatch-text1">#ffbae9</span>
+                                </div>
+                                <div class="color-swatch2">
+                                    <span style="background-color: #323769;"></span><span class="color-swatch-text2">#323769</span>
+                                </div>
                             </div>
                         </div>
                         <div class="table__column">
@@ -177,6 +185,6 @@
         </section>
     </footer>
 
-    <script src="/js/index.js"></script>
+    <script src="/js/debut.js"></script>
 </body>
 </html>
