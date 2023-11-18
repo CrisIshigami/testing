@@ -795,7 +795,7 @@ body::-webkit-scrollbar-thumb, .section__network::-webkit-scrollbar-thumb{
         width: 100%;
         background-size: contain;
         background-repeat: repeat;
-        height: 300px;
+        height: 350px;
         padding-top: 20px;
         padding-bottom: 20px;
     }
@@ -1026,8 +1026,8 @@ body::-webkit-scrollbar-thumb, .section__network::-webkit-scrollbar-thumb{
 
     /*MODAL SCHEDULE*/
     .popup_img .schedule{
-        top: 55%;
-        max-width: 800px;
+        top: 52%;
+        max-width: 850px;
         width: 95%;
     }
     .popup_img .cancel{
@@ -1256,8 +1256,8 @@ body::-webkit-scrollbar-thumb, .section__network::-webkit-scrollbar-thumb{
 
     /*MODAL SCHEDULE*/
     .popup_img .schedule{
-        top: 55%;
-        max-width: 950px;
+        top: 52%;
+        max-width: 1000px;
         width: 95%;
     }
     .popup_img .cancel{

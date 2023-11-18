@@ -229,6 +229,16 @@ body::-webkit-scrollbar-thumb, .section__network::-webkit-scrollbar-thumb,.music
 .lore__description__paragraph{
     font-size: 15px;
 }
+
+.video a{
+    cursor: pointer;
+}
+
+.video video{
+    width: 100%;
+    height: auto;
+}
+
 .section__icon__sgv{
     display: flex;
     flex-direction: row;

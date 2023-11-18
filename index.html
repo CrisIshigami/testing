@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Estilos CSS/index.css">
-    <link rel="stylesheet" href="Estilos CSS/preloader.css">
+    <link rel="stylesheet" href="/Estilos CSS/index.css">
+    <link rel="stylesheet" href="/Estilos CSS/preloader.css">
     <link rel="icon" href="images/icon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
     <link rel="icon" href="images/icon_shuwa_png.png" type="image/png">
@@ -82,7 +82,9 @@
                     
                     <div class="popup_img">
                         <img class="cancel" src="/images/menu_cancelar.png" alt="">
-                        <a target="_blank" href="https://twitter.com/ShuraHiwa/status/1723915910803607786"><img class="schedule" src="/images/horario-semanal.webp" alt=""></a>
+                        <a target="_blank" href="https://twitter.com/ShuraHiwa/status/1723915910803607786">
+                            <img class="schedule" src="/images/horario-semanal.webp" alt="">
+                        </a>
                     </div>
 
 
@@ -100,6 +102,11 @@
                     <div class="article__paragraph">
                         <h1 class="article__profile__title">Perfil</h1>
                         <h2 class="article__profile__paragraph">Shura Hiwa es una PNGtuber independiente que debutó el 11/06. Hace directos principalmente en Twitch. Su personaje representa una Biker Panther. El idioma principal de sus streams es el Español, pero también habla inglés y francés.</h2>
+                        <h2  class="article__profile__paragraph">
+                            <a href="debut.html" 
+                            style="text-decoration: underline; color: rgb(255, 255, 255);">
+                            Más detalles</a>
+                        </h2>
                     </div>
                     <div class="section__profile__image">
                         <img src="/images/shura_halloween.webp" alt="" class="profile__image">
@@ -228,7 +235,7 @@
                     setTimeout(function() {
                     preloader.style.display = "none";
                     }, 1000);
-                }, 3000);
+                }, 500);
             }
     });
     </script>
