@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title"
+    content="Fans de Shura Hiwa">
+    <meta property="og:description"
+    content="Sitio Web hecho por un fan de Shura Hiwa">
+    <meta property="og:image"
+    content="/images/shura_profile.webp">
     <link rel="stylesheet" href="/Estilos CSS/index.css">
     <link rel="stylesheet" href="/Estilos CSS/preloader.css">
     <link rel="icon" href="images/icon.ico" type="image/x-icon">
@@ -20,7 +26,7 @@
     <div class="god">
         <header class="hero">
             <section class="nav__main">
-                <nav class="nav__section container">
+                <nav class="nav__section container-nav">
                     <a href="#top"><img class="hero_image" src="/images/logo_shura_prototipo.webp" alt=""></a>
                     <ul class="ul__nav">
                         <li class="nav__item"><p class="nav__link_title">Menu</p></li>
@@ -50,7 +56,7 @@
                     <p class="section__note"><span>Importante: </span>Esta página NO ES UN SITIO OFICIAL. Fue creada por mí para Shura sin fines de lucro, con el único objetivo de ser otro medio de información sobre las actividades de Shura.</p>
                     <p class="section__note">Si deseas ver la versión anterior de este sitio, click en la catita.</p>
                     <div class="section__note_div">
-                        <a class="section__note_a" target="_blank" href="https://shurahiwafansite.live">
+                        <a class="section__note_a" target="_blank" href="/old page/index-old.html">
                             <img src="/images/shura_return_page.webp" alt="">
                         </a>
                     </div>
@@ -77,12 +83,12 @@
                     </a>
 
                     <div class="card__information_div_image">
-                        <h1 class="card__title">Horario Semanal<br>Nov 13 - Nov 19</h1>
+                        <h1 class="card__title">Horario Semanal<br>Nov 27 - Dic 03</h1>
                     </div>
                     
                     <div class="popup_img">
                         <img class="cancel" src="/images/menu_cancelar.png" alt="">
-                        <a target="_blank" href="https://twitter.com/ShuraHiwa/status/1723915910803607786">
+                        <a target="_blank" href="https://x.com/ShuraHiwa/status/1729154792055067045?s=20">
                             <img class="schedule" src="/images/horario-semanal.webp" alt="">
                         </a>
                     </div>
@@ -109,7 +115,7 @@
                         </h2>
                     </div>
                     <div class="section__profile__image">
-                        <img src="/images/shura_halloween.webp" alt="" class="profile__image">
+                        <img src="/images/shura_profile.webp" alt="" class="profile__image">
                     </div>
                 </div>
             </section>
@@ -147,7 +153,7 @@
                         <img src="/images/ko_fi.webp" alt="" class="network__img">
                         <h2 class="network__subtitle">Ko-fi</h2>
                     </a>
-                    <a class="network__links" href="https://discord.gg/rd3KEhAX" target="_blank">
+                    <a class="network__links" href="https://discord.gg/UxvGN36qhX" target="_blank">
                         <img src="/images/discord.webp" alt="" class="network__img">
                         <h2 class="network__subtitle">Discord</h2>
                     </a>
@@ -163,7 +169,7 @@
             </section>
 
             <section id="Referencias" class="section__reference__main">
-                <h1 class="reference__title">Referencia</h1>
+                <h1 class="reference__title">Referencias</h1>
                 <article class="reference__title__paragraph container">
                     
                     <article class="references__paragraph">
@@ -194,7 +200,12 @@
                         
                     </article>
                     <section class="section__reference__image__png">
-                        <img src="/images/referencia.webp" alt="" class="section__reference__img">
+                        <h1 class="reference__title_2">Hoja de referencias</h1>
+                        <img src="/images/hoja_referencia.webp" alt="" class="section__reference__img">
+                    </section>
+
+                    <section class="section__reference__image__png">
+                        <img src="/images/hoja_moto_referencia.webp" alt="" class="section__reference__img">
                     </section>
                 </article>
             
@@ -235,7 +246,7 @@
                     setTimeout(function() {
                     preloader.style.display = "none";
                     }, 1000);
-                }, 500);
+                }, 2500);
             }
     });
     </script>
@@ -267,6 +278,15 @@
             // Abre una ventana emergente con la imagen
             window.open(imageUrl, '_blank', 'width=600, height=400');
         }
+    </script>
+
+    <script>
+        document.addEventListener('dragstart', function (event) {
+            var element = event.target;
+            if (element.tagName === 'IMG') {
+                event.preventDefault();
+            }
+        });
     </script>
 </body>
 </html>
